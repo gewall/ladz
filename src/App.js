@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Navbar } from "./components/navbar";
 import { AppContextProvider } from "./lib/contexts";
 import { AppReducer, initialState } from "./lib/contexts/reducers";
 import { AppRoutes } from "./routes";
@@ -19,7 +18,6 @@ function App() {
 
   return (
     <AppContextProvider reducer={AppReducer} initialState={initialState}>
-      <Navbar />
       <AppRoutes />
     </AppContextProvider>
   );
